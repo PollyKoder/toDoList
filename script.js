@@ -37,6 +37,11 @@ toDoForm.addEventListener("submit", function (event) {
 
 //Saves the data to local storage, is fired by the add data function
 function saveData() {
-    localStorage.setItem("taskList".taskList.innerHTML);
+    localStorage.setItem("taskList", taskList.innerHTML);
 }
 
+//Loads data from local storage
+function loadData() {
+    taskList.innerHTML = localStorage.getItem("taskList");
+}
+loadData();

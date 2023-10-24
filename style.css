@@ -8,6 +8,7 @@ body {
     background-position: cover;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .position {
     display: flex;
@@ -37,5 +38,51 @@ main, header {
 li {
     display: flex;
     list-style-type: none;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
 }
+
+
+@media (max-width:1024px) {
+    .sectionOne {
+        max-width: 400px;
+    }
+    
+    .listCard {
+        max-width: 300px;
+    }
+}
+
+@media (max-width:768px) {
+    .sectionOne {
+        max-width: 300px;
+    }
+
+    .listCard {
+        max-width: 250px;
+    }
+
+    body {
+        background-position: center;
+        background-size: 1150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sectionOne {
+        max-width: 250px;
+    }
+
+    .listCard {
+        max-width: 200px;
+    }
+
+    body {
+        background-position: contain;
+        background-size: 1060px;
+    }
+}
+
+
+
