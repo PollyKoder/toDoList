@@ -29,7 +29,14 @@ taskList.addEventListener("click", function (event) {
     saveData();
 });
 
+//Prevents the default form and calls addTask()
+toDoForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    addTask();
+});
+
 //Saves the data to local storage, is fired by the add data function
 function saveData() {
-    localStorage.setItem("taskList". taskList.innerHTML);
+    localStorage.setItem("taskList".taskList.innerHTML);
 }
+
