@@ -9,15 +9,33 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
-main, header {
+.position {
     display: flex;
     flex-direction: column;
+    gap: 1em;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+main, header {
     margin-top: 30px;
+}
+
+.sectionOne {
+    width: 500px;
+    border: 2px solid #ebeb67;
+    background-color: #f9f987;
 }
 
 .listCard {
     margin-top: 40px;
+    margin-bottom: 60px;
+    width: 350px;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
 }
