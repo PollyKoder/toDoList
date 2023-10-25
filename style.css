@@ -54,6 +54,7 @@ li {
     gap: 20px;
     text-align: left;
     justify-content: space-between;
+    padding: 3px;
 }
 
 
