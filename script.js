@@ -23,6 +23,15 @@ function addTask() {
     saveData();
 }
 
+//My attempt at making a functioning check box
+        //function checkTask() {
+        //     let checkBox = document.getElementById("#checkBoxID");
+        //     if (checkBox.checked === true);
+        //     else (checkBox === false);
+        //     saveData();
+        // }
+//Nope, it does make a functioning checkbox, but I need to find out how to get it connected to the li element
+
 //the function below removes the task from the tasklist when it's assigned button is clicked
 taskList.addEventListener("click", function (event) {
     event.target.tagName === "BUTTON" && event.target.parentElement.remove();
