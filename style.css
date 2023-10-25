@@ -32,7 +32,7 @@ main, header {
     width: 500px;
     border: 2px solid #ebeb67;
     background-color: #f9f987;
-    box-shadow: -4px 8px 10px #5c5c5c;
+    box-shadow: -4px 10px 15px #5c5c5c;
 }
 
 .listCard {
