@@ -13,7 +13,15 @@ function addTask() {
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "❌";
 
+        // let checkBox = document.createElement("input");
+        // checkBox.type = "checkbox";
+         //second attempt, tried a different way, it gives a checkbox, but it's till positioned wrong.
+
+
+
         newTask.textContent = textInput.value;
+        //newTask.appendChild(checkBox);
+         //line above is connected to the secons attempt.
         taskList.appendChild(newTask);
         newTask.appendChild(deleteButton);
     } else {

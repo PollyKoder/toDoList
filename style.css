@@ -45,6 +45,20 @@ main, header {
     width: 180px;
     padding-left: 20px;
     height: 20px;
+    border-radius: 5px;
+    color: #020255;
+    padding: 8px;
+    padding-left: 10px;
+}
+
+.addButton {
+    width: 60px;
+    border-radius: 10px;
+    background-color: #020255;
+    color: #c5c5c5;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 li {
