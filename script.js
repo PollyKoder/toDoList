@@ -13,15 +13,21 @@ function addTask() {
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "❌";
 
-        // let checkBox = document.createElement("input");
-        // checkBox.type = "checkbox";
+         let checkBox = document.createElement("input");
+         checkBox.type = "checkbox";
+         checkBox.name = checkBox;
+         checkBox.parentElement = newTask;
+                //Attempted to add a functional save to the checkbox.
+                // if (checkBox.checked === true);
+                // else (checkBox === false);
+                // saveData();
          //second attempt, tried a different way, it gives a checkbox, but it's till positioned wrong.
 
 
 
         newTask.textContent = textInput.value;
-        //newTask.appendChild(checkBox);
-         //line above is connected to the secons attempt.
+        newTask.appendChild(checkBox);
+         //line above is connected to the second attempt.
         taskList.appendChild(newTask);
         newTask.appendChild(deleteButton);
     } else {
@@ -32,18 +38,22 @@ function addTask() {
 }
 
 //My attempt at making a functioning check box
-        //function checkTask() {
-        //     let checkBox = document.getElementById("#checkBoxID");
-        //     if (checkBox.checked === true);
-        //     else (checkBox === false);
-        //     saveData();
-        // }
+        // function checkTask() {
+        //      let checkBox = document.getElementById("#checkBoxID");
+        //      const name = checkBox;
+        //      if (checkBox.checked === true);
+        //      else (checkBox === false);
+        //      saveData();
+        //  }
 //Nope, it does make a functioning checkbox, but I need to find out how to get it connected to the li element
 
 //the function below removes the task from the tasklist when it's assigned button is clicked
 taskList.addEventListener("click", function (event) {
     event.target.tagName === "BUTTON" && event.target.parentElement.remove();
+    event.target.tagName === 
     saveData();
+
+
 });
 
 //Prevents the default form and calls addTask()

@@ -1,8 +1,10 @@
+/* styles the entire page to give it some consistency*/
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
 }
 
+/*styles given to the body, such as backgorund*/
 body {
     background-image: url(Image/Notes.jpg);
     background-position: cover;
@@ -10,6 +12,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/*styles for position, a class that is given to several html elements, to avoid the same lines of 
+code repeating themselves iver and over. Which makes the css code shorter/dry'er*/
 .position {
     display: flex;
     flex-direction: column;
@@ -19,15 +24,20 @@ body {
     text-align: center;
 }
 
+/*styles added to the headline of the page*/
 h1 {
     text-decoration: underline;
     text-shadow: -4px 7px 8px #5c5c5c;
 }
 
+/*styles added to main and header, to give the page some breathing space */
 main, header {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
+/*styles added to section one. Adds some dimention to the listcard with shadow and set's a width and 
+color to the listCard, could've added said styles directly to the listCard, but I wanted the option to 
+be able to adjust them separatly for different screens.*/ 
 .sectionOne {
     width: 500px;
     border: 2px solid #ebeb67;
@@ -35,12 +45,14 @@ main, header {
     box-shadow: -4px 10px 15px #5c5c5c;
 }
 
+/*styles added to listCard, which could've been named divContainer*/
 .listCard {
     margin-top: 40px;
     margin-bottom: 60px;
     width: 350px;
 }
 
+/*styles added to inputField to specify it's size and padding. Added color to the text*/
 .inputField {
     width: 180px;
     padding-left: 20px;
@@ -51,6 +63,7 @@ main, header {
     padding-left: 10px;
 }
 
+/*styles added to addButton, such as it's size and color. And adjusted cursor*/
 .addButton {
     width: 60px;
     border-radius: 10px;
@@ -61,6 +74,7 @@ main, header {
     cursor: pointer;
 }
 
+/*styles added to the li items*/
 li {
     display: flex;
     list-style-type: none;
@@ -69,6 +83,20 @@ li {
     text-align: left;
     justify-content: space-between;
     padding: 3px;
+}
+
+/* Attempted to add styling to the checkbox itself, no response*/
+/* .checkbox {
+    content: " ";
+    display: flex;
+    flex-direction: column;
+    position: left, absolute;
+} */
+
+ul li.checked {
+    color: #807a7a;
+    text-decoration: line-through;
+
 }
 
 
